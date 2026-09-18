@@ -25,6 +25,29 @@ python -m pip install "lerobot==0.4.3" numpy pandas matplotlib pillow jupyterlab
 python -m jupyter lab seminar_01_data_and_actions.ipynb
 ```
 
+### macOS
+
+```bash
+# Go to this laboratory directory
+cd ~/path_to/multimodal-vla-course/01-robotic-learning-data
+
+# One-time: download a local CPython 3.11 runtime
+uv python install 3.11
+
+# One-time for this lab: create an isolated environment
+uv venv --python 3.11 .venv
+source .venv/bin/activate
+
+# Add pip to the new environment, then install the lab dependencies
+python -m ensurepip --upgrade
+python -m pip install --upgrade pip
+python -m pip install "lerobot==0.4.3" numpy pandas matplotlib pillow jupyterlab
+
+# Start JupyterLab with this environment selected
+python -m jupyter lab seminar_01_data_and_actions.ipynb
+```
+
+
 On Windows, activate the environment with:
 
 ```powershell
